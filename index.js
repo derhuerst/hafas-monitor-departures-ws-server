@@ -1,10 +1,10 @@
 'use strict'
 
 const {Server} = require('ws')
-const createMonitor = require('hafas-monitor-departures')
+const _createMonitor = require('hafas-monitor-departures')
 
-const createMonitorServer = (httpServer, hafas, stations, interval) => {
-	const wsServer = new Server({server: httpServer})
+const createMonitorServer = (server, hafas, stations, interval, createMonitor = _createMonitor) => {
+	const wsServer = new Server({server})
 	// todo: wsServer.on('error')
 
 	let monitor = null
