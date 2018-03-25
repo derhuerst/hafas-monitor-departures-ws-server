@@ -19,7 +19,35 @@ npm install hafas-monitor-departures-ws-server
 ## Usage
 
 ```js
-todo
+const hafas = require('vbb-hafas')
+const http = require('http')
+
+const createMonitorServer = require('.')
+
+const stations = [ // array of station ids
+	'900000100003' // alexanderplatz
+]
+const interval = 5 * 1000 // every 5 seconds
+
+const httpServer = http.createServer()
+createMonitorServer(httpServer, hafas, stations, interval)
+httpServer.listen(3000)
+```
+
+Let a client receive the data:
+
+```js
+const WebSocket = require('ws')
+
+const client = new WebSocket('ws://localhost:3000/')
+client.on('message', (msg) => {
+	try {
+		const departure = JSON.parse(msg)
+		console.log(departure)
+	} catch (err) {
+		console.error(err)
+	}
+})
 ```
 
 
