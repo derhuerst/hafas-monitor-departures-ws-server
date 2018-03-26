@@ -1,5 +1,7 @@
 # hafas-monitor-departures-ws-server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/hafas-monitor-departures-ws-server.svg)](https://greenkeeper.io/)
+
 **A WebSocket server wrapping [`hafas-monitor-departures`](https://github.com/derhuerst/hafas-monitor-departures).**
 
 [![npm version](https://img.shields.io/npm/v/hafas-monitor-departures-ws-server.svg)](https://www.npmjs.com/package/hafas-monitor-departures-ws-server)
