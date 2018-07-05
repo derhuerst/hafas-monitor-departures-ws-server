@@ -25,7 +25,7 @@
 	"dependencies": {
 		"bufferutil": "^4.0.0",
 		"hafas-monitor-departures": "^1.0.2",
-		"utf-8-validate": "^4.0.0",
+		"utf-8-validate": "^5.0.0",
 		"ws": "^5.1.0"
 	},
 	"scripts": {
