@@ -33,6 +33,6 @@
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
-		"vbb-hafas": "^4.1.1"
+		"vbb-hafas": "^5.0.0"
 	}
 }
