@@ -19,7 +19,7 @@ npm install hafas-monitor-departures-ws-server
 ## Usage
 
 ```js
-const hafas = require('vbb-hafas')
+const createHafas = require('vbb-hafas')
 const http = require('http')
 
 const createMonitorServer = require('.')
@@ -30,6 +30,7 @@ const stations = [ // array of station ids
 const interval = 5 * 1000 // every 5 seconds
 
 const httpServer = http.createServer()
+const hafas = createHafas('my-awesome-program')
 createMonitorServer(httpServer, hafas, stations, interval)
 httpServer.listen(3000)
 ```
