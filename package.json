@@ -23,7 +23,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"bufferutil": "^4.0.0",
+		"bufferutil": "4.0.0",
 		"hafas-monitor-departures": "^2.0.0",
 		"utf-8-validate": "^5.0.0",
 		"ws": "^6.0.0"
