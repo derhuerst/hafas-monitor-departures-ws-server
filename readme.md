@@ -1,6 +1,8 @@
 # hafas-monitor-departures-ws-server
 
-**A WebSocket server wrapping [`hafas-monitor-departures`](https://github.com/derhuerst/hafas-monitor-departures).**
+A WebSocket server wrapping [`hafas-monitor-departures`](https://github.com/derhuerst/hafas-monitor-departures).
+
+**Deprecated. Use [`hafas-live-ws-server`](https://github.com/derhuerst/hafas-live-ws-server) instead.**
 
 [![npm version](https://img.shields.io/npm/v/hafas-monitor-departures-ws-server.svg)](https://www.npmjs.com/package/hafas-monitor-departures-ws-server)
 [![build status](https://api.travis-ci.org/derhuerst/hafas-monitor-departures-ws-server.svg?branch=master)](https://travis-ci.org/derhuerst/hafas-monitor-departures-ws-server)
